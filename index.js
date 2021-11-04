@@ -10,8 +10,8 @@ app.use(cors());
 app.use(express.json());
 const port= process.env.PORT || 8000
 
-const MONGODB_URI= "mongodb+srv://raf:raf123@cluster0.l1ltl.mongodb.net/myDatabase?retryWrites=true&w=majority"
-mongoose.connect(MONGODB_URI,{
+const uri=process.env.MONGODB_URI;
+mongoose.connect(uri,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
 
