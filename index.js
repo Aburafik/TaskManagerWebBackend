@@ -8,10 +8,10 @@ dotenv.config();
 const app= express();
 app.use(cors());
 app.use(express.json());
-const port=8000|| process.env.PORT 
+const port= process.env.PORT || 8000
 
-
-mongoose.connect(process.env.MONGODB_URI,{
+const MONGODB_URI= "mongodb+srv://raf:raf123@cluster0.l1ltl.mongodb.net/myDatabase?retryWrites=true&w=majority"
+mongoose.connect(MONGODB_URI,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
 
