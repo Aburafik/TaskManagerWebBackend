@@ -10,9 +10,9 @@ app.use(cors());
 app.use(express.json());
 const port=8000|| process.env.PORT 
 
-const db = process.env.Db_URKey
+// const db = process.env.Db_URKey
 
-mongoose.connect(process.env.Db_URKey,{
+mongoose.connect(process.env.MONGODB_URI,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
 
