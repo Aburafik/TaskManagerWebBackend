@@ -42,11 +42,8 @@ if(todoModel){
     })
     
 }
-    // res.send(req.body)
-    // console.log(req.body.name)
 })
 
-// mongodb+srv://raf:raf123@cluster0.l1ltl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
 app.post("/create",async(req,res)=>{
     const {title,description, isCompleted} = req.body;
